@@ -4,7 +4,6 @@
     <bpmn:participant id="Participant_1ug325a" name="Candidate" processRef="digibp-template" />
     <bpmn:participant id="Participant_1sd7x29" name="Business Unit Manager" processRef="Process_053vyam" />
     <bpmn:participant id="Participant_1tx5fx6" name="HR Department" processRef="Process_1tx7y11" />
-    <bpmn:participant id="Participant_178dak3" name="IT System" processRef="Process_0klgdb7" />
     <bpmn:messageFlow id="MessageFlow_1env1oc" sourceRef="Task_1acnedb" targetRef="Task_0xsl0x7" />
     <bpmn:messageFlow id="MessageFlow_0enuijf" sourceRef="Task_1nhqqm7" targetRef="Task_0bpje0c" />
     <bpmn:messageFlow id="MessageFlow_17ayf61" sourceRef="Participant_1ug325a" targetRef="StartEvent_1trnu34" />
@@ -27,7 +26,6 @@
     <bpmn:messageFlow id="MessageFlow_0sw8nay" sourceRef="Participant_1ug325a" targetRef="Task_1gs2yp3" />
     <bpmn:messageFlow id="MessageFlow_1pn5bbt" sourceRef="Task_04yq0mo" targetRef="Participant_1ug325a" />
     <bpmn:messageFlow id="MessageFlow_1y9kleb" sourceRef="Participant_1ug325a" targetRef="Task_077qvor" />
-    <bpmn:messageFlow id="MessageFlow_0i1s62f" sourceRef="Task_1426iwn" targetRef="Task_0xq4u6l" />
     <bpmn:messageFlow id="MessageFlow_08nqma8" sourceRef="Task_12sof7q" targetRef="Task_1f29zvs" />
     <bpmn:messageFlow id="MessageFlow_0jcffyg" sourceRef="Task_1tqgug5" targetRef="Task_12sof7q" />
   </bpmn:collaboration>
@@ -320,9 +318,6 @@
       <bpmn:incoming>SequenceFlow_0hiod6z</bpmn:incoming>
     </bpmn:endEvent>
   </bpmn:process>
-  <bpmn:process id="Process_0klgdb7" isExecutable="false">
-    <bpmn:serviceTask id="Task_0xq4u6l" name="Creat user accounts" />
-  </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_18nvvkc">
       <bpmndi:BPMNShape id="Participant_1ug325a_di" bpmnElement="Participant_1ug325a" isHorizontal="true">
@@ -333,9 +328,6 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Participant_1tx5fx6_di" bpmnElement="Participant_1tx5fx6" isHorizontal="true">
         <dc:Bounds x="132" y="730" width="5558" height="403" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Participant_178dak3_di" bpmnElement="Participant_178dak3" isHorizontal="true">
-        <dc:Bounds x="132" y="1142" width="5414" height="249" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_04pl6ep_di" bpmnElement="StartEvent_1">
         <dc:Bounds x="194" y="502" width="36" height="36" />
@@ -831,13 +823,6 @@
         <di:waypoint x="5185" y="930" />
         <di:waypoint x="5185" y="1066" />
         <di:waypoint x="5210" y="1066" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="ServiceTask_0ahyyim_di" bpmnElement="Task_0xq4u6l">
-        <dc:Bounds x="5210" y="1223" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="MessageFlow_0i1s62f_di" bpmnElement="MessageFlow_0i1s62f">
-        <di:waypoint x="5260" y="1106" />
-        <di:waypoint x="5260" y="1223" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Task_0eyj02j_di" bpmnElement="Task_0eyj02j">
         <dc:Bounds x="5210" y="890" width="100" height="80" />
