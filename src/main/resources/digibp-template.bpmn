@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_0dpg51j" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.0.0-beta.2">
   <bpmn:collaboration id="Collaboration_18nvvkc">
-    <bpmn:participant id="Participant_1tx5fx6" name="Company" processRef="Process_1tx7y11" />
+    <bpmn:participant id="Participant_1tx5fx6" name="Company " processRef="Process_1tx7y11" />
     <bpmn:participant id="Participant_1a3e25g" name="HR Deprtment Employee" processRef="Process_1mrsycp" />
     <bpmn:participant id="Participant_1rrulpn" name="Company" processRef="Process_1qjqd4r" />
     <bpmn:participant id="Participant_0ywxi4o" name="Company" processRef="Process_0ssewws" />
