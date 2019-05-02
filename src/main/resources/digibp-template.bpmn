@@ -23,7 +23,7 @@
     <bpmn:messageFlow id="MessageFlow_0230rvc" sourceRef="Task_04yq0mo" targetRef="Participant_0t03h05" />
     <bpmn:messageFlow id="MessageFlow_151s8ye" sourceRef="Participant_08nsktd" targetRef="StartEvent_1a5gsmd" />
   </bpmn:collaboration>
-  <bpmn:process id="Process_1tx7y11" isExecutable="false">
+  <bpmn:process id="Process_1tx7y11" isExecutable="true">
     <bpmn:laneSet id="LaneSet_0vrxcwm">
       <bpmn:lane id="Lane_1cngwgd" name="HR Depratment Employee">
         <bpmn:flowNodeRef>Task_0xsl0x7</bpmn:flowNodeRef>
@@ -131,7 +131,7 @@
       </bpmn:conditionalEventDefinition>
     </bpmn:startEvent>
   </bpmn:process>
-  <bpmn:process id="Process_1mrsycp" isExecutable="false">
+  <bpmn:process id="Process_1mrsycp" isExecutable="true">
     <bpmn:endEvent id="EndEvent_065dpbw">
       <bpmn:incoming>SequenceFlow_1i1brkc</bpmn:incoming>
     </bpmn:endEvent>
@@ -192,7 +192,7 @@
       <bpmn:incoming>SequenceFlow_03p0ncg</bpmn:incoming>
     </bpmn:endEvent>
   </bpmn:process>
-  <bpmn:process id="Process_1qjqd4r" isExecutable="false">
+  <bpmn:process id="Process_1qjqd4r" isExecutable="true">
     <bpmn:laneSet id="LaneSet_0l4mkje">
       <bpmn:lane id="Lane_0v0avty" name="Business Unit Manager">
         <bpmn:flowNodeRef>Task_177q90f</bpmn:flowNodeRef>
@@ -258,7 +258,7 @@
       <bpmn:outgoing>SequenceFlow_0e39o1j</bpmn:outgoing>
     </bpmn:userTask>
   </bpmn:process>
-  <bpmn:process id="Process_0ssewws" isExecutable="false">
+  <bpmn:process id="Process_0ssewws" isExecutable="true">
     <bpmn:laneSet id="LaneSet_0zjwue1">
       <bpmn:lane id="Lane_187doov" name="HR Department Employee">
         <bpmn:flowNodeRef>Task_03mkfhj</bpmn:flowNodeRef>
@@ -324,7 +324,7 @@
       <bpmn:outgoing>SequenceFlow_0s4t7o8</bpmn:outgoing>
     </bpmn:userTask>
   </bpmn:process>
-  <bpmn:process id="Process_0xy8nm3" isExecutable="false">
+  <bpmn:process id="Process_0xy8nm3" isExecutable="true">
     <bpmn:userTask id="Task_1gs2yp3" name="Offer negotiated">
       <bpmn:incoming>SequenceFlow_0eiy9hv</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1xtojin</bpmn:outgoing>
@@ -380,7 +380,7 @@
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow_0ql88ca" sourceRef="Task_04yq0mo" targetRef="EndEvent_15s375a" />
   </bpmn:process>
-  <bpmn:process id="Process_0aw62wg" isExecutable="false">
+  <bpmn:process id="Process_0aw62wg" isExecutable="true">
     <bpmn:task id="Task_0eyj02j" name="Request installation of workplace">
       <bpmn:incoming>SequenceFlow_0modadl</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_17f9kvk</bpmn:outgoing>
