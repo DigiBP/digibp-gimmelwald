@@ -31,6 +31,7 @@
         <bpmn:flowNodeRef>Task_0xsl0x7</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>IntermediateThrowEvent_0bs5zy6</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1g0a4qd</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_07o7g9p</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0h3vjvk</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_02hotkj</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1kk7m7v</bpmn:flowNodeRef>
@@ -38,8 +39,8 @@
         <bpmn:flowNodeRef>Task_0fnjcd0</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0d2yibg</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0azb20p</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Task_07o7g9p</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_18xxjmq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_0tzunu2</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1cj0ioa" name="Business Unit Manager">
         <bpmn:flowNodeRef>Task_0bpje0c</bpmn:flowNodeRef>
@@ -251,7 +252,13 @@
     <bpmn:sequenceFlow id="SequenceFlow_0ny20ab" sourceRef="Task_0azb20p" targetRef="Task_18xxjmq" />
     <bpmn:callActivity id="Task_18xxjmq" name="Call subprocess: Candidate onboarding" calledElement="Participant_1vmat2l">
       <bpmn:incoming>SequenceFlow_0ny20ab</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0zfbspg</bpmn:outgoing>
     </bpmn:callActivity>
+    <bpmn:sequenceFlow id="SequenceFlow_0zfbspg" sourceRef="Task_18xxjmq" targetRef="EndEvent_0tzunu2" />
+    <bpmn:endEvent id="EndEvent_0tzunu2">
+      <bpmn:incoming>SequenceFlow_0zfbspg</bpmn:incoming>
+      <bpmn:terminateEventDefinition />
+    </bpmn:endEvent>
     <bpmn:textAnnotation id="TextAnnotation_04yk4ke">
       <bpmn:text>Applications Database</bpmn:text>
     </bpmn:textAnnotation>
@@ -445,7 +452,7 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_18nvvkc">
       <bpmndi:BPMNShape id="Participant_1tx5fx6_di" bpmnElement="Participant_1tx5fx6" isHorizontal="true">
-        <dc:Bounds x="154" y="81" width="3815" height="709" />
+        <dc:Bounds x="154" y="81" width="3961" height="709" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_04pl6ep_di" bpmnElement="StartEvent_1">
         <dc:Bounds x="273" y="253" width="36" height="36" />
@@ -734,7 +741,7 @@
         <di:waypoint x="1481" y="2018" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Lane_1cngwgd_di" bpmnElement="Lane_1cngwgd" isHorizontal="true">
-        <dc:Bounds x="184" y="370" width="3785" height="420" />
+        <dc:Bounds x="184" y="370" width="3931" height="420" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_0vd96qi_di" bpmnElement="SequenceFlow_0vd96qi">
         <di:waypoint x="406" y="311" />
@@ -802,7 +809,7 @@
         <di:waypoint x="2629" y="1861" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Lane_1cj0ioa_di" bpmnElement="Lane_1cj0ioa" isHorizontal="true">
-        <dc:Bounds x="184" y="81" width="3785" height="289" />
+        <dc:Bounds x="184" y="81" width="3931" height="289" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_1orpyuo_di" bpmnElement="SequenceFlow_1orpyuo">
         <di:waypoint x="1003" y="549" />
@@ -1111,6 +1118,13 @@
         <di:waypoint x="1981" y="560" />
         <di:waypoint x="2324" y="560" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0zfbspg_di" bpmnElement="SequenceFlow_0zfbspg">
+        <di:waypoint x="3869" y="574" />
+        <di:waypoint x="3979" y="574" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0o2bjnk_di" bpmnElement="EndEvent_0tzunu2">
+        <dc:Bounds x="3979" y="556" width="36" height="36" />
+      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
