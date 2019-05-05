@@ -153,6 +153,7 @@
         <bpmn:incoming>SequenceFlow_1gm4r3i</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1fat189</bpmn:outgoing>
         <bpmn:outgoing>SequenceFlow_147y31v</bpmn:outgoing>
+        <bpmn:outgoing>SequenceFlow_01xrvau</bpmn:outgoing>
       </bpmn:exclusiveGateway>
       <bpmn:endEvent id="EndEvent_00zf5e6">
         <bpmn:incoming>SequenceFlow_0o6qgy9</bpmn:incoming>
@@ -176,6 +177,7 @@
       <bpmn:userTask id="UserTask_07zini4" name="Send interview timeslot suggestion">
         <bpmn:incoming>SequenceFlow_0efn9hg</bpmn:incoming>
         <bpmn:incoming>SequenceFlow_0swh8gn</bpmn:incoming>
+        <bpmn:incoming>SequenceFlow_01xrvau</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_14f17zr</bpmn:outgoing>
       </bpmn:userTask>
       <bpmn:userTask id="UserTask_11nqo9p" name="Send interview timeslot suggestion">
@@ -203,6 +205,7 @@
           <bpmn:condition xsi:type="bpmn:tFormalExpression" />
         </bpmn:conditionalEventDefinition>
       </bpmn:startEvent>
+      <bpmn:sequenceFlow id="SequenceFlow_01xrvau" sourceRef="ExclusiveGateway_1rj570w" targetRef="UserTask_07zini4" />
     </bpmn:subProcess>
     <bpmn:task id="Task_0h3vjvk" name="Collect applications">
       <bpmn:incoming>SequenceFlow_0g3unvj</bpmn:incoming>
@@ -1104,6 +1107,10 @@
           <dc:Bounds x="1793" y="588" width="77" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_01xrvau_di" bpmnElement="SequenceFlow_01xrvau">
+        <di:waypoint x="1981" y="560" />
+        <di:waypoint x="2324" y="560" />
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
