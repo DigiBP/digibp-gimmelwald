@@ -149,7 +149,7 @@
       </bpmn:dataOutputAssociation>
     </bpmn:userTask>
     <bpmn:sequenceFlow id="SequenceFlow_1un96vq" sourceRef="IntermediateThrowEvent_0bs5zy6" targetRef="Task_1kk7m7v" />
-    <bpmn:callActivity id="Task_1kk7m7v" name="Call subprocess: preliminary sounding" calledElement="Process_0fecv34">
+    <bpmn:callActivity id="Task_1kk7m7v" name="Call subprocess: preliminary sounding" calledElement="preliminary_sounding">
       <bpmn:incoming>SequenceFlow_1un96vq</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0lvgum3</bpmn:outgoing>
     </bpmn:callActivity>
