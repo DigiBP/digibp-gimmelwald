@@ -2,15 +2,15 @@
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_0dpg51j" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.0.0-beta.2">
   <bpmn:collaboration id="Collaboration_18nvvkc">
     <bpmn:participant id="Participant_1tx5fx6" name="Company" processRef="Process_1tx7y11" />
-    <bpmn:participant id="Participant_0ywxi4o" name="Company" processRef="Process_0ssewws" />
-    <bpmn:participant id="Participant_1xull76" name="HR Department Employee" processRef="Process_0xy8nm3" />
-    <bpmn:participant id="Participant_1vmat2l" name="HR Department Employee" processRef="Process_0aw62wg" />
+    <bpmn:participant id="Participant_0ywxi4o" name="Subprocess: Candidate Interview" processRef="Process_0ssewws" />
+    <bpmn:participant id="Participant_1xull76" name="Subprocess: Offer Negotiation (HR Department Employee)" processRef="Process_0xy8nm3" />
+    <bpmn:participant id="Participant_1vmat2l" name="Subprocess: Candidate Onboarding (HR Department Employee)" processRef="Process_0aw62wg" />
     <bpmn:participant id="Participant_0td15ao" name="Candidate" />
     <bpmn:participant id="Participant_0t03h05" name="Candidate" />
     <bpmn:participant id="Participant_08nsktd" name="Candidate" />
     <bpmn:participant id="Participant_1rxefmu" name="Subprocess: Preliminary Sounding" processRef="Process_0fecv34" />
     <bpmn:participant id="Participant_0rawhq0" name="CV Rating API" />
-    <bpmn:participant id="Participant_0wowjjx" name="HR Deprtment Employee" processRef="preliminary_sounding" />
+    <bpmn:participant id="Participant_0wowjjx" name="Subprocess: Preliminary Sounding (HR Deprtment Employee)" processRef="preliminary_sounding" />
     <bpmn:participant id="Participant_1b9r945" name="Candidate" />
     <bpmn:messageFlow id="MessageFlow_0517eh9" sourceRef="Participant_0t03h05" targetRef="StartEvent_1g2tio0" />
     <bpmn:messageFlow id="MessageFlow_0230rvc" sourceRef="Task_04yq0mo" targetRef="Participant_0t03h05" />
