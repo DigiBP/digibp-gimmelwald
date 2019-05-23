@@ -20,7 +20,6 @@
     <bpmn:messageFlow id="MessageFlow_1nudbiq" sourceRef="Participant_0td15ao" targetRef="Task_06emisp" />
     <bpmn:messageFlow id="MessageFlow_1kzsyg4" sourceRef="Participant_0td15ao" targetRef="StartEvent_0duxvkh" />
     <bpmn:messageFlow id="MessageFlow_0a302ah" sourceRef="Task_0ate21y" targetRef="Participant_0td15ao" />
-    <bpmn:messageFlow id="MessageFlow_1018df8" sourceRef="Participant_1b9r945" targetRef="StartEvent_1oyta1n" />
     <bpmn:messageFlow id="MessageFlow_1rbtwey" sourceRef="ServiceTask_0sbdl66" targetRef="Participant_1b9r945" />
     <bpmn:messageFlow id="MessageFlow_0mbf6gn" sourceRef="ServiceTask_0uyunlt" targetRef="Participant_1b9r945" />
   </bpmn:collaboration>
@@ -376,10 +375,6 @@
     <bpmn:association id="Association_12wq636" sourceRef="DataStoreReference_0yuq7uy" targetRef="TextAnnotation_1769ihs" />
   </bpmn:process>
   <bpmn:process id="preliminary_sounding" isExecutable="true">
-    <bpmn:startEvent id="StartEvent_1oyta1n" name="Application form Candidate via Form">
-      <bpmn:outgoing>SequenceFlow_1s3bt0p</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_153y8av" messageRef="Message_0kc5gru" />
-    </bpmn:startEvent>
     <bpmn:serviceTask id="ServiceTask_1w3zrx8" name="Collect applicants">
       <bpmn:extensionElements>
         <camunda:connector>
@@ -525,6 +520,10 @@
       <bpmn:outgoing>SequenceFlow_18ucfvy</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:dataStoreReference id="DataStoreReference_0zat3j5" />
+    <bpmn:startEvent id="StartEvent_1oyta1n" name="Application deadline expired">
+      <bpmn:outgoing>SequenceFlow_1s3bt0p</bpmn:outgoing>
+      <bpmn:timerEventDefinition />
+    </bpmn:startEvent>
     <bpmn:textAnnotation id="TextAnnotation_04yk4ke">
       <bpmn:text>Applications Database</bpmn:text>
     </bpmn:textAnnotation>
@@ -1093,12 +1092,6 @@
       <bpmndi:BPMNShape id="Participant_0wowjjx_di" bpmnElement="Participant_0wowjjx" isHorizontal="true">
         <dc:Bounds x="879" y="980" width="1326" height="461" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="StartEvent_1oyta1n_di" bpmnElement="StartEvent_1oyta1n">
-        <dc:Bounds x="932" y="1141" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="916" y="1187" width="78" height="40" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1w3zrx8_di" bpmnElement="ServiceTask_1w3zrx8">
         <dc:Bounds x="1003" y="1119" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -1227,10 +1220,6 @@
       <bpmndi:BPMNShape id="Participant_1b9r945_di" bpmnElement="Participant_1b9r945" isHorizontal="true">
         <dc:Bounds x="879" y="851" width="1325" height="84" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="MessageFlow_1018df8_di" bpmnElement="MessageFlow_1018df8">
-        <di:waypoint x="950" y="935" />
-        <di:waypoint x="950" y="1141" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="MessageFlow_1rbtwey_di" bpmnElement="MessageFlow_1rbtwey">
         <di:waypoint x="2006" y="1044" />
         <di:waypoint x="2006" y="935" />
@@ -1243,6 +1232,12 @@
         <di:waypoint x="1053" y="1199" />
         <di:waypoint x="1053" y="1312" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="StartEvent_11afqlh_di" bpmnElement="StartEvent_1oyta1n">
+        <dc:Bounds x="932" y="1141" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="915" y="1187" width="81" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
