@@ -8,8 +8,8 @@ This repository contains the documentation and digitalized HR recruitment proces
 * Maurus Hodel, [maurus.hodel@students.fhnw.ch](mailto:XXX.XX@students.fhnw.ch)
 * Silvan Trifari, [silvan.trifari@students.fhnw.ch](mailto:silvan.trifari@students.fhnw.ch)
 
-TODO:
-This readme is structured as follow:
+
+## This readme is structured as follow:
 1. Intro
 2. Process flow - as is
 3. HR recruitment process
