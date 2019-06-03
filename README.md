@@ -10,22 +10,20 @@ This repository contains the documentation and digitalized HR recruitment proces
 
 
 ## This readme is structured as follow:
-1. Intro
+1. Introduction
 2. Process flow - as is
-3. HR recruitment process
-4. Process Scope
-5. Process flow - to be
-6. HR recruitment process
-7. Subprocess preliminary sounding Part 1
-8. Subprocess preliminary sounding Part 2
-9. Subprocess candidate interview
-10. Subprocess offer negotiation
-11. Subprocess onboarding
+3. Process flow - to be
+4. HR recruitment process
+5. Subprocess preliminary sounding Part 1
+6. Subprocess preliminary sounding Part 2
+7. Subprocess candidate interview
+8. Subprocess offer negotiation
+9. Subprocess onboarding
+10. Process Description
+11. Service Integration
 12. Typical Challenges
-13. Process Description
-14. Service Integration
-15. Project Challenges
-16. Recommendations
+13. Project Challenges
+14. Recommendations
 
 
 ## Introduction
