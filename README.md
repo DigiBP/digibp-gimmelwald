@@ -47,15 +47,10 @@ If the offer is excepted, the HR department creates an employment contract.
 As soon as the contact is signed and returned, the HR informes the BU manager, requests the preparation of a new workspace and all system accesses.
 The process ends with the welcome of the new employee to his first day of work.
 
-### HR recruitment process
-Camunda modeler was used to model the HR recruitment process. The main HR recruitment process also contains individual processes which are modelled as subprocess. Those are called in the main HR recruitment process. Once the called subprocess is completed, token returns to the main HR recruitment process and continues with the modelled tasks.
-
-## Process Scope
-For this project, the scope of the HR recruitment process has been defined to start with the request for a new employee to join the team, and ends when a new employee is successfully hired. The affected departments (e.g. Business unit or HR department) are labeled and the assigned with corresponding tasks. The process scope ends with the part when the new employee signs and returns the contract and furthermore the onboarding process has been initiated. The onboarding itself and any trainings or the first day of the new employee is not part of this process scope.
-The digitalization of process is focused on the subprocess "preliminary sounding" due to most value added on the process flow.
-
 ### Process flow - to be
 After we described the "as is" process we started to digitize the process to its future form. This "to be" process will be described in the following paragraphs.
+For this project, the scope of the HR recruitment process has been defined to start with the request for a new employee to join the team, and ends when a new employee is successfully hired. The affected departments (e.g. Business unit or HR department) are labeled and the assigned with corresponding tasks. The process scope ends with the part when the new employee signs and returns the contract and furthermore the onboarding process has been initiated. The onboarding itself and any trainings or the first day of the new employee is not part of this process scope.
+Camunda modeler was used to model the HR recruitment process. The main HR recruitment process also contains individual processes which are modelled as subprocess. Those are called in the main HR recruitment process. Once the called subprocess is completed, token returns to the main HR recruitment process and continues with the modelled tasks. The digitalization of process is focused on the subprocess "preliminary sounding" due to most value added on the process flow.
 
 ### HR recruitment process
 ![HR Mainprocess](https://user-images.githubusercontent.com/47921658/58235796-d451fd00-7d41-11e9-91e5-5d8f755f279e.png)
@@ -89,9 +84,6 @@ There is no service integration required in this subprocess.
 ![Subprocess Onboarding](https://user-images.githubusercontent.com/47921658/58236218-b5079f80-7d42-11e9-8c92-a6f4def3f0ef.png)
 As the final step in the main HR recruitment process the subprocess onboarding is called. Within this subprocess the starting event is triggered once the signed contract has been obtained. The returned contract initiates three tasks in parallel which notifies the Business Unit managers about the new team member and the requests for the workplace installation and new user account. As a last step within this subprocess the candidate will be welcomed on his or her first day of work. With this final task also the main HR recruitment process ends.
 There is no service integration required in this subprocess.
-
-## Typical Challenges
-By the start of the project, our team quickly agreed on the topic of the HR recruitment processes. The reason behind our decision was that we commonly agreed, that the recruitment process consists of many decisions and collaborations with internal and external roles and has high potential of digitalization and automatization. The process is in general often very time consuming as the sounding of application documents can already be messy, simply by the large number of candidates that are applying. Also, the process normally requires more than one round of interviews until the prefered candidate has been found.
 
 ## Process Description
 ### Roles
@@ -162,6 +154,8 @@ Dialogflow provides an AI powered interaction with your product through text and
 The chatbot is used to apply directly for a job with the Google Assistant
 ![image](https://user-images.githubusercontent.com/17927946/58704433-4498f800-83ac-11e9-9374-2125442a0d41.png)
 
+## Typical Challenges
+By the start of the project, our team quickly agreed on the topic of the HR recruitment processes. The reason behind our decision was that we commonly agreed, that the recruitment process consists of many decisions and collaborations with internal and external roles and has high potential of digitalization and automatization. The process is in general often very time consuming as the sounding of application documents can already be messy, simply by the large number of candidates that are applying. Also, the process normally requires more than one round of interviews until the prefered candidate has been found.
 
 ### Project Challenges
 The first challenge in this project was to determine a standard recruitment process, while making assumptions about the size and type of company that the process is embedded within. We assumed that we are dealing with a mid-size Swiss company with a small HR department and no existing automation or digitization of processes. Following this, a second challenge was to get the process into an executable state, and of course, to integrate certain services. Due to the limited scope of this assignment, we focussed our digitization on one particular subprocess, where we saw the greatest potential for adding value through automation. Many of our initial ideas were not feasible, as they were too complex for our collective skill level, but we agreed on the digitization of the initial CV review subprocess due to its time-intensive nature if done manually.
