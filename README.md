@@ -11,7 +11,22 @@ This repository contains the documentation and digitalized HR recruitment proces
 TODO:
 This readme is structured as follow:
 1. Intro
-2. etc...
+2. Process flow - as is
+3. HR recruitment process
+4. Process Scope
+5. Process flow - to be
+6. HR recruitment process
+7. Subprocess preliminary sounding Part 1
+8. Subprocess preliminary sounding Part 2
+9. Subprocess candidate interview
+10. Subprocess offer negotiation
+11. Subprocess onboarding
+12. Typical Challenges
+13. Process Description
+14. Service Integration
+15. Project Challenges
+16. Recommendations
+
 
 ## Introduction
 As part of the Digitalization of Business Processes module, Team Gimmelwald decided to focus on the HR recruitment process and to digitize that process. In the following paragraphs the recruitment process for a new position, any used artefacts as well as integrated services (if any) are described.
