@@ -72,15 +72,18 @@ Once the deadline has been passed - until then the incoming applications are sto
 
 ##### Subprocess candidate interview
 ![Subprocess Candidate interview](https://user-images.githubusercontent.com/47921658/58236182-9b665800-7d42-11e9-9eaa-fbc1dda8d66e.png)
+
 Once the preliminary sounding has been closed as a next step the candidate interview subprocess will be called from the main process. Within this subprocess the starting event awaits the confirmed time slot for the interview from the candidate. Afterwards the time slot will be again confirmed by HR department with the candidate and the business department. The next step is the interview between one responsible in the business unit and the candidate. Based on this interview the business unit has to decide whether the candidate is still interesting for the company or not. If the latter is the case the candidate will be rejected. Otherwise HR will be notified that candidate is still an option for the business unit. This subprocess will be passed through also for the 2nd interview session. There is no interaction with other services needed for this subprocess. Therefore no service integration required in this subprocess.
 
 ##### Subprocess offer negotiation
 ![Subprocess Offer Negotiation](https://user-images.githubusercontent.com/47921658/58236200-a7eab080-7d42-11e9-9d3b-006336638955.png)
+
 After the 2nd interview the business unit needs to decide for the suitable candidate. Once the potential new employee has been chosen, an offer is send to the candidate. As a next step the subprocess offer negotiation is called. On basis of the candidates feedback the offer is accepted, rejected or requires further negotiations. If the offers is rejected the process ends with the rejections. If the offer is accepted the HR department creates an employment contract and sends the contract to the candidate. In case of a negotiation there is an interim step which either ends with an offer rejection or offer acceptance.
 There is no service integration required in this subprocess.
 
 ##### Subprocess onboarding
 ![Subprocess Onboarding](https://user-images.githubusercontent.com/47921658/58236218-b5079f80-7d42-11e9-8c92-a6f4def3f0ef.png)
+
 As the final step in the main HR recruitment process the subprocess onboarding is called. Within this subprocess the starting event is triggered once the signed contract has been obtained. The returned contract initiates three tasks in parallel which notifies the Business Unit managers about the new team member and the requests for the workplace installation and new user account. As a last step within this subprocess the candidate will be welcomed on his or her first day of work. With this final task also the main HR recruitment process ends.
 There is no service integration required in this subprocess.
 
