@@ -66,6 +66,7 @@ The subprocess preliminary sounding part 1 is called by HR main process task “
 
 ##### Subprocess preliminary sounding Part 2
 ![Subprocess Preliminary Sounding Part 2](https://user-images.githubusercontent.com/47921658/58236150-8b4e7880-7d42-11e9-8136-05951c30b65f.png)
+
 The subprocess preliminary sounding part 2 is called by task “check applicants” which is called in subprocess preliminary sounding part 1.
 Once the deadline has been passed - until then the incoming applications are stored in a database within the company - the integrated service from RezScore is called to rate the incoming applications. For this purpose the CVs will go through the external application which scans the skills and experiences stated in the CV. As an output each individual CV resp. application will be rated between A and F (A== full fit; F==no fit) and added in a spreadsheet.
 
